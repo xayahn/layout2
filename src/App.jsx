@@ -1,8 +1,13 @@
 import './App.css'
+import Header from './Header'
+import Footer from './Footer'
 
 function App() {
   return (
     <div className="container">
+      {/* Header */}
+      <Header />
+
       {/* Top Section */}
       <div className="top">
         <div className="box"></div>
@@ -29,6 +34,9 @@ function App() {
         <div className="small"></div>
         <div className="side"></div>
       </div>
+
+      {/* Footer */}
+      <Footer />
     </div>
   )
 }
