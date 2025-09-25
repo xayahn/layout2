@@ -1,89 +1,92 @@
+/* Reset defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
+/* Main container fills screen */
 .container {
-  padding: 20px;
-}
-
-.header {
-  background-color: #53d5eb;
-  padding: 20px;
-  margin-bottom: 20px;
-}
-
-.content {
-}
-
-.content1 {
-  display: flex;
-  height: 600px;
-}
-
-.c1left {
+  border: 5px solid limegreen;
+  background: lightgreen;
+  padding: 10px;
   display: flex;
   flex-direction: column;
-  flex: 2;
+  gap: 10px;
+  height: 100%;
+  width: 100%;
 }
 
-.hero {
-  flex: 3;
-  background-color: #d9c9e4;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  padding-top: 20px;
-  padding-bottom: 40px;
-}
-
-.sidebar {
-  flex: 5;
-  background-color: #a0c264;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  padding-top: 20px;
-  padding-bottom: 40px;
-}
-
-.c1right {
+/* Top Section */
+.top {
+  border: 3px solid blue;
+  background: lightblue;
+  padding: 10px;
   display: flex;
-  flex-direction: column;
-  flex: 3;
+  gap: 10px;
+  height: 20%;
 }
-
-.mc {
-  flex: 7;
-  background-color: #f6c733;
-  padding: 20px;
-  margin-bottom: 20px;
-}
-
-.ec {
-  flex: 3;
-  background-color: #898989;
-  padding: 20px;
-  margin-bottom: 20px;
-}
-
-.content2 {
-  display: flex;
-}
-
-.ri {
-  flex: 4;
-  background-color: #2ab278;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  padding-top: 20px;
-  padding-bottom: 40px;
-
-}
-
-.rp {
+.top .box {
   flex: 1;
-  background-color: #f6d8e7;
-  margin-bottom: 20px;
-  padding-top: 20px;
-  padding-bottom: 40px;
+  border: 2px solid coral;
+  background: peachpuff;
+}
+.nested {
+  flex: 1;
+  display: flex;
+  border: 2px solid red;
+  background: pink;
+}
+.nested div {
+  flex: 1;
+  border: 2px solid crimson;
+  background: mistyrose;
 }
 
-.footer {
-  background-color: #ffa502;
-  padding: 20px;
-  margin-bottom: 20px;
+/* Middle Section */
+.middle {
+  display: flex;
+  gap: 10px;
+  height: 50%;
+}
+.middle .left {
+  flex: 2;
+  border: 3px solid brown;
+  background: lightcoral;
+}
+.middle .right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.middle .right div {
+  flex: 1;
+  border: 3px solid brown;
+  background: lightcoral;
+}
+
+/* Bottom Section */
+.bottom {
+  border: 3px solid blue;
+  background: lavender;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  height: 20%;
+}
+.bottom .side {
+  flex: 1;
+  border: 2px solid blueviolet;
+  background: lavender;
+}
+.bottom .small {
+  width: 15%;
+  border: 2px solid coral;
+  background: peachpuff;
 }
